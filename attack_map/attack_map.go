@@ -458,7 +458,7 @@ func filterIPsWeekly() []string {
 
 func scheduleWeeklyReload() {
 	// Create a ticker that triggers every minute for demo purposes
-	ticker := time.NewTicker(time.Second * 60)
+	ticker := time.NewTicker(time.Hour * 7 * 24)
 
 	// Run the first reload immediately
 	log.Printf("Tried sending an email")
